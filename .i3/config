@@ -9,9 +9,9 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Toto je pre WIN klavesu
+# This is for WIN key
 #set $mod Mod4
-# A toto je pre standardny ALT
+# And this for standard ALT key
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -127,7 +127,7 @@ bindsym $mod+Shift+r restart
 #
 # http://superuser.com/a/485165
 #
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit' -b 'Fix background' 'exec feh --bg-scale /usr/share/backgrounds/Forever_by_Shady_S.jpg' -b 'Monitor layout' 'exec arandr' -b 'Monitor settings' 'sh monitory' -b 'Doma' 'xrandr --output LVDS1 --auto --pos 1920x432 --primary --output VGA1 --auto --pos 0x0' -b 'Skola' 'xrandr --output LVDS1 --auto --pos 0x432 --primary --output VGA1 --auto --pos 1366x0'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit' -b 'Fix background' 'exec feh --bg-scale /usr/share/backgrounds/Forever_by_Shady_S.jpg' -b 'Monitor layout' 'exec arandr' -b 'Monitor settings' 'sh monitory' -b 'Home' 'xrandr --output LVDS1 --auto --pos 1920x432 --primary --output VGA1 --auto --pos 0x0' -b 'School' 'xrandr --output LVDS1 --auto --pos 0x432 --primary --output VGA1 --auto --pos 1366x0'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -155,13 +155,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Nastavenie pustania skratiek do aplikacii (ignorovanie i3wm skratiek)
+# Setting passing shortcuts to applications (ignoring i3wm shortcuts)
 mode "passthrough" {
 	bindsym Mod4+Escape mode "default"
 }
 bindsym Mod4+Escape mode "passthrough"
 
-# Nastavenia spustania aplikacii naraz cez skratky zaciatocnych pismen
+# Setting shortcuts for launching application using their starting letter
 mode "launch" {
 	bindsym f exec firefox; mode "default"
 	bindsym c exec chromium-browser; mode "default"
@@ -169,6 +169,7 @@ mode "launch" {
 	bindsym n exec n2autilus; mode "default"
 	bindysm r exec redshift-gtk; mode "default"
 
+	bindsym e exec ea; mode "default"
 	bindsym d exec docear; mode "default"
 	bindsym m exec mendeleydesktop; mode "default"
 	bindsym l exec lexicon; mode "default"
@@ -187,28 +188,51 @@ bindsym $mod+Tab mode "launch"
 # finds out, if available)
 bar {
 #	status_command i3status
-	# Zavolanie mojho skriptu, ktory vykresli aj ikonky a aj klavesnicu
+	# Calling custom script that draw icons and keyboard
 	status_command ~/.i3/i3script.sh
 	position top
 	# show tray icons on the primary monitor
 	#tray_output primary
 }
 
-# Pre prepinanie klavesnice
+# Shortcut for switching keyboard layout
 bindsym Ctrl+$mod+k exec "~/.i3/changeLayout.sh"
 
-# Uzamknutie plochy
-bindsym Ctrl+Alt+l exec "gnome-screensaver-command --lock"
+# Shortcut for locking screen
+bindsym Ctrl+$mod+l exec "gnome-screensaver-command --lock"
 
-## Mnou pridane srandicky
-# Pre GTK temy
-exec --no-startup-id gnome-settings-daemon
+# Schortcut for controling the hibernation
+bindsym XF86Sleep exec systemctl suspend
 
-# Pre sietovy manazer
+# Schortcuts for controlling the screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+#XF86Display
+#XF86ScreenSaver
+#XF86Battery
+
+# These shortcuts are managed via volumeicon
+#bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+#bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%; exec pactl set-sink-mute @DEFAULT_SINK@ 0
+#bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%; exec pactl set-sink-mute @DEFAULT_SINK@ 0
+
+#XF86AudioPrev
+#XF86AudioPlay
+#XF86AudioNext
+
+# Schortcut for taking screenshots
+bindsym Print exec gnome-screenshot
+bindsym Shift+Print exec gnome-screenshot -w
+
+# For eye candy of GTK themes
+exec --no-startup-id unity-settings-daemon
+
+# Starting network manager
 exec --no-startup-id nm-applet
 
-# Pre zvukovy manazer
-exec --no-startup-id gnome-sound-applet
+# Starting sound manager
+exec --no-startup-id volumeicon
 
-# Obrazok
+# Setting wallpaper
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/Forever_by_Shady_S.jpg
