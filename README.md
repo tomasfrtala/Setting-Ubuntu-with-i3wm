@@ -18,6 +18,8 @@ fonts-font-awesome
 ```
 
 ## Tweaks
+For getting hotkeys for controlling sound working you can open setting for volumeicon by right clicking on the icon and choose Preferences->Hotkeys and check them. Alternatively you can define yourself hotkeys in the ~/.i3/config file.
+
 For simplification of work with file-manager create the startup script in
 ```
 sudo gedit /usr/local/bin/n2autilus
