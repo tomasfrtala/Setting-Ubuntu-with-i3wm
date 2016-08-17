@@ -43,6 +43,9 @@ this line:
 ```
 export XDG_CURRENT_DESKTOP=Unity
 ```
+## Post install
+If you are interested in automation of these processes, read the ubuntu-post-install.sh remove any unwanted commands, make it executable and run ;)
+
 ---
 
 Credits for wallpaper belongs to Mustafa Kareem
