@@ -35,6 +35,9 @@ cd terminator-solarized
 mkdir -p ~/.config/terminator/
 touch ~/.config/terminator/config
 cp config ~/.config/terminator
+# Additionally you need to swap entries of
+# [[default]] to [[solarized-dark]] in the file ~/.config/terminator/config
+# to be able always use solarize-dark theme
 
 ##
 ## Switch from bash to zsh and apply theme for it
