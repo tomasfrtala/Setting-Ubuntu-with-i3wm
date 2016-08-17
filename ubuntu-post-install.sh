@@ -59,6 +59,12 @@ echo "alias ll='ls -alF'" >> ~/.zshrc
 echo "alias la='ls -A'" >> ~/.zshrc
 echo "alias l='ls -CF'" >> ~/.zshrc
 
+
+##
+## Add coloring progress bar for apt
+## Based on this: http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
+echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+
 ##
 ## Change needs to be performed manually
 ## So run the command bellow:
