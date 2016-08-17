@@ -47,13 +47,14 @@ echo 'source  ~/.powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
 ##
 ## Add coloring output and aliases from bash
 ##
-echo "alias ls='ls --color=auto'"
-echo "alias grep='grep --color=auto'"
-echo "alias fgrep='fgrep --color=auto'"
-echo "alias egrep='egrep --color=auto'"
-echo "alias ll='ls -alF'"
-echo "alias la='ls -A'"
-echo "alias l='ls -CF'"
+echo "## Coloring output" >> ~/.zshrc
+echo "alias ls='ls --color=auto'" >> ~/.zshrc
+echo "alias grep='grep --color=auto'" >> ~/.zshrc
+echo "alias fgrep='fgrep --color=auto'" >> ~/.zshrc
+echo "alias egrep='egrep --color=auto'" >> ~/.zshrc
+echo "alias ll='ls -alF'" >> ~/.zshrc
+echo "alias la='ls -A'" >> ~/.zshrc
+echo "alias l='ls -CF'" >> ~/.zshrc
 
 ##
 ## Change needs to be performed manually
