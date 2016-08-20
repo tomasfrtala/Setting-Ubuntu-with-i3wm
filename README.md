@@ -14,6 +14,7 @@ After that install i3 via command:
 sudo apt-get install i3 \
 xbacklight \
 feh \
+volumeicon-alsa \
 fonts-font-awesome
 ```
 
