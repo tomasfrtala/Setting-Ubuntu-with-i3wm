@@ -15,6 +15,8 @@ ppa-purge
 # Download google earth but the 32bit version although you have 64bit system because the 64bit installer is broken.
 # sudo dpkg -i google-earth-stable_current_i386.deb
 # sudo apt-get -f install
+# Before you can run the application, optional step is to update the launcher due present bug
+# https://bugs.launchpad.net/ubuntu/+source/googleearth-package/+bug/1160289
 # and you can run the google-earth
 
 ##
