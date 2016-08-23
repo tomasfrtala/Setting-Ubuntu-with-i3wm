@@ -10,6 +10,14 @@ wine \
 ppa-purge
 
 ##
+## Google Earth installation
+##
+# Download google earth but the 32bit version although you have 64bit system because the 64bit installer is broken.
+# sudo dpkg -i google-earth-stable_current_i386.deb
+# sudo apt-get -f install
+# and you can run the google-earth
+
+##
 ## Applications for academic research
 ##
 sudo apt-get -y install \
