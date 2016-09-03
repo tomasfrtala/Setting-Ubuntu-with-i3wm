@@ -3,8 +3,12 @@
 After fresh install of Ubuntu 16.04 with Unity do this steps
 
 ## Adding the latest version of i3 from official sources
+As super user run this command:
 ```
-sudo echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list.d/i3.list
+echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list.d/i3.list
+```
+After that run:
+```
 sudo apt-get update
 sudo apt-get --allow-unauthenticated install sur5r-keyring
 sudo apt-get update
