@@ -62,7 +62,7 @@ sudo apt-get -y install oracle-java8-installer
 apt-get -y install \
 zsh powerline fonts-powerline
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.powerlevel9k
-echo 'export TERM="xterm-256color"'
+echo 'export TERM="xterm-256color"' >> ~/.zshrc
 echo 'source  ~/.powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
 
 ##
