@@ -38,13 +38,20 @@ sudo apt-get -y install \
 arandr htop terminator meld
 
 ##
+## Install latest Java
+##
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get -y install oracle-java8-installer
+
+##
 ## Setup Solarized theme for terminator
 ##
-git clone https://github.com/ghuntley/terminator-solarized.git
-cd terminator-solarized
-mkdir -p ~/.config/terminator/
-touch ~/.config/terminator/config
-cp config ~/.config/terminator
+#git clone https://github.com/ghuntley/terminator-solarized.git
+#cd terminator-solarized
+#mkdir -p ~/.config/terminator/
+#touch ~/.config/terminator/config
+#cp config ~/.config/terminator
 # Additionally you need to swap entries of
 # [[default]] to [[solarized-dark]] in the file ~/.config/terminator/config
 # to be able always use solarize-dark theme
@@ -55,6 +62,7 @@ cp config ~/.config/terminator
 apt-get -y install \
 zsh powerline fonts-powerline
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.powerlevel9k
+echo 'export TERM="xterm-256color"'
 echo 'source  ~/.powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
 
 ##
@@ -68,7 +76,6 @@ echo "alias egrep='egrep --color=auto'" >> ~/.zshrc
 echo "alias ll='ls -alF'" >> ~/.zshrc
 echo "alias la='ls -A'" >> ~/.zshrc
 echo "alias l='ls -CF'" >> ~/.zshrc
-
 
 ##
 ## Add coloring progress bar for apt
