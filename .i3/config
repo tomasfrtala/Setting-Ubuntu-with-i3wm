@@ -247,5 +247,8 @@ exec --no-startup-id nm-applet
 # Starting sound manager
 exec --no-startup-id volumeicon
 
+# Starting eye saver
+exec --no-startup-id redshift-gtk
+
 # Setting wallpaper
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/Forever_by_Shady_S.jpg
