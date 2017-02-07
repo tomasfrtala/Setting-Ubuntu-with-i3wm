@@ -32,6 +32,16 @@ sudo apt-get -y install \
 git clang cmake vim mc
 
 ##
+## Achieving shortcut for colorful git log
+## Based on these articles: http://think-like-a-git.net/sections/graphs-and-git/visualizing-your-git-repository.html
+## 			    http://sweetme.at/2013/09/13/git-logs-with-color/
+echo '# Based on these articles
+# http://think-like-a-git.net/sections/graphs-and-git/visualizing-your-git-repository.html
+# http://sweetme.at/2013/09/13/git-logs-with-color/
+[alias]
+        lg = log --oneline --abbrev-commit --all --graph --decorate --color' >> ~/.gitconfig
+
+##
 ## Useful utilites
 ##
 sudo apt-get -y install \
