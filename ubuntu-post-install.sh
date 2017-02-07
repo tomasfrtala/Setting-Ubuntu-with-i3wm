@@ -35,7 +35,7 @@ git clang cmake vim mc
 ## Useful utilites
 ##
 sudo apt-get -y install \
-arandr htop terminator
+arandr htop terminator meld
 
 ##
 ## Setup Solarized theme for terminator
