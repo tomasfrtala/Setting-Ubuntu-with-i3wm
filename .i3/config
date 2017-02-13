@@ -176,7 +176,10 @@ bindsym Mod4+Escape mode "passthrough"
 # Setting shortcuts for launching application using their starting letter
 mode "launch" {
 	bindsym f exec firefox; mode "default"
+
 	bindsym c exec clion; mode "default"
+	bindsym i exec idea; mode "default"
+
 	bindsym k exec gnome-calculator; mode "default"
 	bindsym t exec thunderbird; mode "default"
 	bindsym n exec n2autilus; mode "default"
