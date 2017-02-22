@@ -179,6 +179,8 @@ mode "launch" {
 
 	bindsym c exec clion; mode "default"
 	bindsym i exec idea; mode "default"
+	bindsym p exec charm; mode "default"
+
 
 	bindsym k exec gnome-calculator; mode "default"
 	bindsym t exec thunderbird; mode "default"
