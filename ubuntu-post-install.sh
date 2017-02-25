@@ -69,7 +69,7 @@ sudo apt-get -y install oracle-java8-installer
 ##
 ## Switch from bash to zsh and apply theme for it
 ##
-apt-get -y install \
+sudo apt-get -y install \
 zsh powerline fonts-powerline
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.powerlevel9k
 echo 'export TERM="xterm-256color"' >> ~/.zshrc
@@ -97,7 +97,7 @@ echo "HISTFILE=~/.zsh_history" >> ~/.zshrc
 ##
 ## Add coloring progress bar for apt
 ## Based on this: http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
-echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+echo 'Dpkg::Progress-Fancy "1";' >> /etc/apt/apt.conf.d/99progressbar
 
 ##
 ## Change needs to be performed manually
