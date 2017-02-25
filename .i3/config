@@ -223,8 +223,10 @@ bindsym Ctrl+$mod+l exec "gnome-screensaver-command --lock"
 bindsym XF86Sleep exec systemctl suspend
 
 # Schortcuts for controlling the screen brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # increase screen brightness
+bindsym XF86MonBrightnessUp exec "~/.i3/changeBrightness.sh +1"
+bindsym XF86MonBrightnessDown exec "~/.i3/changeBrightness.sh -1"
 
 #XF86Display
 #XF86ScreenSaver
