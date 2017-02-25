@@ -88,6 +88,13 @@ echo "alias la='ls -A'" >> ~/.zshrc
 echo "alias l='ls -CF'" >> ~/.zshrc
 
 ##
+## Adding history
+##
+echo "## For remembering zsh history" >> ~/.zshrc
+echo "SAVEHIST=100000" >> ~/.zshrc
+echo "HISTFILE=~/.zsh_history" >> ~/.zshrc
+
+##
 ## Add coloring progress bar for apt
 ## Based on this: http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
 echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
