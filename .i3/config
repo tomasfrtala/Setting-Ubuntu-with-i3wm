@@ -179,7 +179,7 @@ mode "launch" {
 
 	bindsym c exec clion; mode "default"
 	bindsym i exec idea; mode "default"
-	bindsym p exec charm; mode "default"
+	bindsym p exec pycharm; mode "default"
 
 
 	bindsym k exec gnome-calculator; mode "default"
@@ -225,8 +225,8 @@ bindsym XF86Sleep exec systemctl suspend
 # Schortcuts for controlling the screen brightness
 #bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # increase screen brightness
-bindsym XF86MonBrightnessUp exec "~/.i3/changeBrightness.sh +1"
-bindsym XF86MonBrightnessDown exec "~/.i3/changeBrightness.sh -1"
+bindsym XF86MonBrightnessUp exec "sudo ~/.i3/changeBrightness.sh +1"
+bindsym XF86MonBrightnessDown exec "sudo ~/.i3/changeBrightness.sh -1"
 
 #XF86Display
 #XF86ScreenSaver
