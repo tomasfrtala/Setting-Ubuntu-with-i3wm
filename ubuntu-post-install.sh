@@ -6,7 +6,6 @@
 sudo apt-get -y install \
 pidgin synaptic vlc redshift-gtk \
 unetbootin gparted \
-wine \
 ppa-purge
 
 ##
@@ -18,6 +17,13 @@ ppa-purge
 # Before you can run the application, optional step is to update the launcher due present bug
 # https://bugs.launchpad.net/ubuntu/+source/googleearth-package/+bug/1160289
 # and you can run the google-earth
+
+##
+## Adding Wine 1.8
+##
+sudo add-apt-repository ppa:ubuntu-wine/ppa
+sudo apt-get update
+sudo apt-get -y install wine1.8
 
 ##
 ## Applications for academic research
