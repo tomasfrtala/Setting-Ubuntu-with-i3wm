@@ -106,3 +106,23 @@ echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
 
 #For keyboard shortcuts
 #https://www.reddit.com/r/i3wm/comments/4fy0dn/ubuntu_1604_system_settings/
+
+##
+## Add lanchpad's latest wine
+##
+#sudo add-apt-repository ppa:ubuntu-wine/ppa
+#sudo apt-get update
+#sudo apt-get install wine1.8
+
+##
+## Enterprise Architect
+##
+#WINEPREFIX=~/.wine-ea wine msiexec /i easetup.msi
+#WINEPREFIX=~/.wine-ea winetricks mdac28
+#WINEPREFIX=~/.wine-ea wine path/to/ea
+
+##
+## Lingea Lexicon
+##
+# in winecfg: opengl32 must be set to "NATIVE"
+#WINEPREFIX=~/.wine-lexicon wine path/to/lexicon
