@@ -135,7 +135,7 @@ bindsym $mod+Shift+r restart
 #
 # http://superuser.com/a/485165
 #
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit' -b 'Fix background' 'exec feh --bg-scale /usr/share/backgrounds/Forever_by_Shady_S.jpg' -b 'Monitor layout' 'exec arandr' -b 'Monitor settings' 'sh monitory' -b 'Home' 'xrandr --output LVDS1 --auto --pos 1920x432 --primary --output VGA1 --auto --pos 0x0' -b 'School' 'xrandr --output LVDS1 --auto --pos 0x432 --primary --output VGA1 --auto --pos 1366x0'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit' -b 'Fix background' 'exec feh --bg-scale /usr/share/backgrounds/Forever_by_Shady_S.jpg' -b 'Display settings' 'exec unity-control-center display' -b 'Home' 'xrandr --output LVDS1 --auto --pos 1920x432 --primary --output VGA1 --auto --pos 0x0' -b 'School' 'xrandr --output LVDS1 --auto --pos 0x432 --primary --output VGA1 --auto --pos 1366x0'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -179,7 +179,7 @@ mode "launch" {
 
 	bindsym c exec clion; mode "default"
 	bindsym i exec idea; mode "default"
-	bindsym p exec charm; mode "default"
+	bindsym p exec pycharm; mode "default"
 
 
 	bindsym k exec gnome-calculator; mode "default"
@@ -223,8 +223,10 @@ bindsym Ctrl+$mod+l exec "gnome-screensaver-command --lock"
 bindsym XF86Sleep exec systemctl suspend
 
 # Schortcuts for controlling the screen brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # increase screen brightness
+bindsym XF86MonBrightnessUp exec "sudo ~/.i3/changeBrightness.sh +1"
+bindsym XF86MonBrightnessDown exec "sudo ~/.i3/changeBrightness.sh -1"
 
 #XF86Display
 #XF86ScreenSaver
