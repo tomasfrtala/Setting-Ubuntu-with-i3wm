@@ -259,3 +259,6 @@ exec --no-startup-id redshift-gtk
 
 # Setting wallpaper
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/Forever_by_Shady_S.jpg
+
+# Open gnome key ring
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
