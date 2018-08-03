@@ -1,4 +1,4 @@
-#Setting Ubuntu 16.04 with i3wm
+# Setting Ubuntu 16.04 with i3wm
 
 After fresh install of Ubuntu 16.04 with Unity do this steps
 
