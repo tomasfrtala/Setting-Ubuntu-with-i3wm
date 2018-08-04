@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # http://i3wm.org/i3status/manpage.html#_external_scripts_programs_with_i3status
-i3status --config ~/.i3status.conf | while :
+i3status --config ~/.i3/i3status.conf | while :
 
 do
 read line
