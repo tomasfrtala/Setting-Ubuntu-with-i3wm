@@ -1,6 +1,6 @@
-# Setting Ubuntu 16.04 with i3wm
+# Setting Ubuntu 18.04 with i3wm
 
-After fresh install of Ubuntu 16.04 with Unity do this steps
+After fresh install of Ubuntu 18.04 with Unity do this steps
 
 ## Adding the latest version of i3 from official sources
 As super user run this command:
@@ -38,13 +38,13 @@ Lastly make it executable:
 ```
 sudo chmod 755 /usr/local/bin/n2autilus
 ```
-If you want to have unity-control-center to display all entries then based on this thread
-http://askubuntu.com/questions/766775/ubuntu-doesnt-give-the-correct-keycodes-for-some-media-keys
-then add at the end of your profile file
+~~If you want to have unity-control-center to display all entries then based on this thread~~
+~~http://askubuntu.com/questions/766775/ubuntu-doesnt-give-the-correct-keycodes-for-some-media-keys~~
+~~then add at the end of your profile file~~
 ```
 vim .profile
 ```
-this line:
+~~this line:~~
 ```
 export XDG_CURRENT_DESKTOP=Unity
 ```

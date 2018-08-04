@@ -4,8 +4,8 @@
 ## Standard applications
 ##
 sudo apt-get -y install \
-pidgin synaptic vlc redshift-gtk \
-unetbootin gparted \
+synaptic vlc redshift-gtk \
+gparted \
 wine \
 ppa-purge
 
@@ -29,7 +29,7 @@ texstudio texlive-latex-base texlive-latex-recommended texlive-latex-extra texli
 ## Applications for development 
 ##
 sudo apt-get -y install \
-git clang cmake vim mc
+git vim mc
 
 ##
 ## Achieving shortcut for colorful git log
@@ -45,7 +45,7 @@ echo '# Based on these articles
 ## Useful utilites
 ##
 sudo apt-get -y install \
-arandr htop terminator meld
+htop terminator meld xbacklight
 
 ##
 ## Install latest Java
@@ -98,6 +98,15 @@ echo "HISTFILE=~/.zsh_history" >> ~/.zshrc
 ## Add coloring progress bar for apt
 ## Based on this: http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
 echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
+
+##
+## For fixing the xbacklight functionality
+##
+echo '    Section "Device"
+        Identifier  "Intel Graphics" 
+        Driver      "intel"
+        Option      "Backlight"  "intel_backlight"
+    EndSection' > /etc/X11/xorg.conf
 
 ##
 ## Change needs to be performed manually
