@@ -10,9 +10,9 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # This is for WIN key
-set $mod Mod4
+#set $mod Mod4
 # And this for standard ALT key
-#set $mod Mod1
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -223,8 +223,11 @@ bindsym Ctrl+$mod+l exec "gnome-screensaver-command --lock"
 bindsym XF86Sleep exec systemctl suspend
 
 # Schortcuts for controlling the screen brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 2 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 2 # increase screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym Shift+XF86MonBrightnessUp exec xbacklight -inc 2 # soft increase screen brightness
+
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 2 # soft decrease screen brightness
 
 #XF86Display
 #XF86ScreenSaver
