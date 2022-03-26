@@ -1,0 +1,65 @@
+i3-wm.bar.position: top
+i3-wm.gaps.inner.size: 0
+i3xrocks.date.format2: %H:%M %A %d.%m.%Y
+
+gnome.icon.theme: Yaru
+gnome.gtk.theme: Yaru
+gnome.wm.theme: Yaru
+
+i3-wm.bar.font: pango:JetBrains Mono Medium 12, Material Design Icons 12
+i3-wm.font: pango:JetBrains Mono Medium 12
+i3xrocks.value.font: JetBrains Mono Medium 12
+rofi.font: JetBrains Mono Medium 24
+
+i3-wm.binding.orientation_toggle: e
+
+rofi.icon-theme: Yaru
+
+i3-wm.window.border.size: 1
+
+i3-wm.bar.separator: |
+
+# i3-theme-window
+i3-wm.client.focused.color.border: #4c7899
+i3-wm.client.focused.color.background: #285577
+i3-wm.client.focused.color.text: #ffffff
+i3-wm.client.focused.color.indicator: #2e9ef4
+
+i3-wm.client.focused_inactive.color.border: #333333
+i3-wm.client.focused_inactive.color.background: #5f676a
+i3-wm.client.focused_inactive.color.text: #ffffff
+i3-wm.client.focused_inactive.color.indicator: #484e50
+
+i3-wm.client.unfocused.color.border: #333333
+i3-wm.client.unfocused.color.background: #222222
+i3-wm.client.unfocused.color.text: #888888
+i3-wm.client.unfocused.color.indicator: #292d2e
+
+i3-wm.client.urgent.color.border: #2f343a
+i3-wm.client.urgent.color.background: #900000
+i3-wm.client.urgent.color.text: #ffffff
+i3-wm.client.urgent.color.indicator: #900000
+
+# i3-theme-bar
+i3-wm.bar.background.color: #000000
+i3-wm.bar.statusline.color: #ffffff
+i3-wm.bar.separator.color: #666666
+
+i3-wm.bar.workspace.focused.border.color: #4c7899
+i3-wm.bar.workspace.focused.background.color: #285577
+i3-wm.bar.workspace.focused.text.color: #ffffff
+
+i3-wm.bar.workspace.active.border.color: #333333
+i3-wm.bar.workspace.active.background.color: #5f676a
+i3-wm.bar.workspace.active.text.color: #ffffff
+
+i3-wm.bar.workspace.inactive.border.color: #333333
+i3-wm.bar.workspace.inactive.background.color: #222222
+i3-wm.bar.workspace.inactive.text.color: #888888
+
+i3-wm.bar.workspace.urgent.border.color: #2f343a
+i3-wm.bar.workspace.urgent.background.color: #900000
+i3-wm.bar.workspace.urgent.text.color: #ffffff
+
+# Prevent regolight for changing background
+gnome.wallpaper: 
