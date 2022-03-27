@@ -289,6 +289,9 @@ bindsym $mod+s layout stacking
 ## Modify // Window Layout Mode // <> w-tabbed ##
 bindsym $mod+w layout tabbed
 
+## Modify // Window Layout Mode // <> e-toggle split ##
+bindsym $mod+e layout toggle split
+
 ## Modify // Move Window to Workspace 1 - 10 // <><Shift> 0..9 ##
 bindsym $mod+Shift+$ws1_key move container to workspace number $ws1
 bindsym $mod+Shift+$ws2_key move container to workspace number $ws2

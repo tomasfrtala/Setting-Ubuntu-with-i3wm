@@ -11,8 +11,6 @@ i3-wm.font: pango:JetBrains Mono Medium 12
 i3xrocks.value.font: JetBrains Mono Medium 12
 rofi.font: JetBrains Mono Medium 24
 
-i3-wm.binding.orientation_toggle: e
-
 rofi.icon-theme: Yaru
 
 i3-wm.window.border.size: 1
