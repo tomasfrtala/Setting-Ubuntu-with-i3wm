@@ -3,8 +3,8 @@ i3-wm.gaps.inner.size: 0
 i3xrocks.date.format2: %H:%M %A %d.%m.%Y
 
 gnome.icon.theme: Yaru
-gnome.gtk.theme: Yaru
-gnome.wm.theme: Yaru
+gnome.gtk.theme: Yaru-dark
+gnome.wm.theme: Yaru-dark
 
 i3-wm.bar.font: pango:JetBrains Mono Medium 12, Material Design Icons 12
 i3-wm.font: pango:JetBrains Mono Medium 12
