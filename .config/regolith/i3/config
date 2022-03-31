@@ -411,11 +411,6 @@ bindsym $mod+$i3-wm.binding.lock exec $i3-wm.program.lock
 # System Management
 ###############################################################################
 
-## Modify // Settings // <> c ##
-#set_from_resource $i3-wm.binding.settings i3-wm.binding.settings c
-#set_from_resource $i3-wm.program.settings i3-wm.program.settings gnome-control-center --class=floating_window
-#bindsym $mod+$i3-wm.binding.settings exec $i3-wm.program.settings
-
 ## Modify // Display Settings // <> d ##
 #set_from_resource $i3-wm.binding.display i3-wm.binding.display d
 #set_from_resource $i3-wm.program.display i3-wm.program.display gnome-control-center --class=floating_window display
@@ -583,6 +578,8 @@ client.focused          $focused.color.border              $focused.color.backgr
 client.focused_inactive $focused_inactive.color.border     $focused_inactive.color.background $focused_inactive.color.text       $focused_inactive.color.indicator  $focused_inactive.color.child_border
 client.unfocused        $unfocused.color.border            $unfocused.color.background        $unfocused.color.text              $unfocused.color.indicator         $unfocused.color.child_border
 client.urgent           $urgent.color.border               $urgent.color.background           $urgent.color.text                 $urgent.color.indicator            $urgent.color.child_border
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #ffffff
 
 # Create variables from Xresources for i3bars's look.
 set_from_resource $i3-wm.bar.background.color i3-wm.bar.background.color "#002b36"
