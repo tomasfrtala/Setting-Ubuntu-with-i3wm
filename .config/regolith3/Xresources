@@ -1,0 +1,14 @@
+!regolith.look.path: /usr/share/regolith-look/lascaille
+regolith.look.path: /usr/share/regolith-look/i3-default
+wm.bar.position: top
+i3xrocks.date.format2: %H:%M %A %d.%m.%Y
+wm.program.unclutter: :
+gnome.terminal.font: Monospace 12
+!gtk.theme_name: Yaru-Dark
+gtk.icon_theme_name: Yaru
+regolith.wallpaper.file: /home/tommy/.local/share/backgrounds/2024-12-23-00-14-23-Forever_by_Shady_S.jpg
+regolith.lockscreen.wallpaper.file: /home/tommy/.local/share/backgrounds/2024-12-23-00-14-23-Forever_by_Shady_S.jpg
+regolith.wallpaper.options: zoom
+regolith.lockscreen.wallpaper.options: zoom
+wm.gaps.focus_follows_mouse: yes
+
