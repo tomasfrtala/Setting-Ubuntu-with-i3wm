@@ -37,6 +37,9 @@ default=gtk;wlr
 usr to /usr
 ```
 
+# Fix heating issue
+Follow the steps about setting the thermald in this answers https://askubuntu.com/a/1520402
+
 ---
 
 Credits for wallpaper belongs to Mustafa Kareem
